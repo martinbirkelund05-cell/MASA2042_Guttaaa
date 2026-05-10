@@ -105,7 +105,7 @@ $$I = \\frac{P_m}{U} = \\frac{1962\\ \\text{W}}{12\\ \\text{V}} = 164\\ \\text{A
 - **Retningsventil:** Trykkfall ved gjennomstrømning → energitap
 - **Sylinder:** Friksjon mellom stempel og sylinder, lekkasje forbi tetningene
 
-Disse tapene gjør at vi trenger mer effekt inn enn det vi får ut.`}},{id:`4g`,prompt:`Anta typiske virkningsgrader: Batteri: 0,99 – DC-motor: 0,96 – Pumpe: 0,99 – Ventil: 0,95 – Sylinder: 0,99. Regn ut nødvendig strøm ut fra batteriet.`,answer:{kind:`number`,expected:184,tolerance:1.84,unit:`A`},solution:{short:`$P_{batt} = 1962 / (0{,}99 \\cdot 0{,}95 \\cdot 0{,}99 \\cdot 0{,}94 \\cdot 0{,}99) \\approx 2200\\ \\text{W}$. $I = 2200/12 = 184\\ \\text{A}$.`,full:`Med tap er effekten som må hentes fra batteriet:
+Disse tapene gjør at vi trenger mer effekt inn enn det vi får ut.`,figures:[`figures/oving-1/oppg4g-losses.png`]}},{id:`4g`,prompt:`Anta typiske virkningsgrader: Batteri: 0,99 – DC-motor: 0,96 – Pumpe: 0,99 – Ventil: 0,95 – Sylinder: 0,99. Regn ut nødvendig strøm ut fra batteriet.`,answer:{kind:`number`,expected:184,tolerance:1.84,unit:`A`},solution:{short:`$P_{batt} = 1962 / (0{,}99 \\cdot 0{,}95 \\cdot 0{,}99 \\cdot 0{,}94 \\cdot 0{,}99) \\approx 2200\\ \\text{W}$. $I = 2200/12 = 184\\ \\text{A}$.`,full:`Med tap er effekten som må hentes fra batteriet:
 $$P_{batt} = \\frac{P_{syl}}{\\eta_{batt} \\cdot \\eta_{motor} \\cdot \\eta_{pumpe} \\cdot \\eta_{ventil} \\cdot \\eta_{syl}} = \\frac{1962}{0{,}99 \\cdot 0{,}96 \\cdot 0{,}99 \\cdot 0{,}95 \\cdot 0{,}99}$$
 
 $$P_{batt} = \\frac{1962}{0{,}895} \\approx 2191\\ \\text{W} \\approx 2{,}2\\ \\text{kW}$$
