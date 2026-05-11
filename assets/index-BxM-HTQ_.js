@@ -13,12 +13,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 $\\Rightarrow 1\\ \\text{J} = \\dfrac{1}{3\\,600\\,000}\\ \\text{kWh} = 2{,}78 \\times 10^{-7}\\ \\text{kWh}$`}},{id:`1c`,prompt:`I oljeindustrien brukes enheten Btu (British thermal unit). Finn omregningskonstanten fra Btu til kWh og til Joule.`,answer:{kind:`multi`,parts:[{kind:`number`,expected:1055,tolerance:10.55,unit:`J`},{kind:`number`,expected:293e-6,tolerance:293e-8,unit:`kWh`}]},solution:{short:`$1\\ \\text{Btu} = 1055\\ \\text{J} = 2{,}93 \\times 10^{-4}\\ \\text{kWh}$`,full:`$1\\ \\text{Btu} = 1055\\ \\text{J} = 2{,}93 \\times 10^{-4}\\ \\text{kWh}$
 
 (det fines også andre definisjoner av Btu, men denne er den mest vanlige.)`}}]},{id:`2`,title:`Dimensjonsanalyse`,intro:`Ved bruk av formler må vi ha kontroll på hva formelen beregner samt hvilke enheter som inngår. Derfor er det alltid god rutine å gjøre en dimensjonsanalyse på formler vi bruker, og da spesielt på nye formler. I oppgavene under skal dere utføre slik dimensjonsanalyse:`,subtasks:[{id:`2a`,prompt:`Formelen under er utledet for potensiell energi i et hydraulisk system. Ut fra denne formelen skal du utføre en dimensjonsanalyse og finne enheten til variabelen $K$:
-$$E_{pot} = \\dfrac{K}{2 V_0} \\cdot \\Delta p_{maks}^2$$
-$V_0$ = Volum og $E$= energi`,answer:{kind:`text`,expectedKeywords:[`Pa`,`N/m²`,`pascal`]},solution:{short:`$K$ har enheten $[\\text{Pa}]$ (Newton per kvadratmeter).`,full:`Vi snur på uttrykket og får: $K = \\dfrac{2 V_0 \\cdot E_{pot}}{\\Delta p_{maks}^2}$
+$$E_{pot} = \\dfrac{V_0}{2K} \\cdot \\Delta p_{maks}^2$$
+$V_0$ = Volum og $E$= energi`,answer:{kind:`text`,expectedKeywords:[`Pa`,`N/m²`,`pascal`]},solution:{short:`$K$ har enheten $[\\text{Pa}]$ (Newton per kvadratmeter).`,full:`Vi snur på uttrykket og løser for $K$:
 
-Setter så inn enheter: $K = \\dfrac{[\\text{m}^3]\\cdot[\\text{J}]}{[\\text{N/m}^2]^2}$
+$$K = \\dfrac{V_0 \\cdot \\Delta p_{maks}^2}{2 E_{pot}}$$
 
-Korter enheter og får: $K = [\\text{N/m}^2]$ (= [Pa])`}},{id:`2b`,prompt:`Formelen under angir trykkfall i et rør. Gjennomfør en dimensjonsanalyse og finn enheten til $\\lambda$:
+Setter inn enheter:
+
+$$K = \\dfrac{[\\text{m}^3]\\cdot[\\text{N/m}^2]^2}{[\\text{J}]} = \\dfrac{[\\text{m}^3]\\cdot[\\text{N}^2/\\text{m}^4]}{[\\text{Nm}]} = [\\text{N/m}^2] = [\\text{Pa}]$$`}},{id:`2b`,prompt:`Formelen under angir trykkfall i et rør. Gjennomfør en dimensjonsanalyse og finn enheten til $\\lambda$:
 $$\\Delta p_{tap} = \\lambda \\cdot \\dfrac{L}{d} \\cdot \\dfrac{\\rho v_m^2}{2}$$
 $v_m$ = strømningshastighet, $L$ = rørlengde, $d$ = rørdiameter, $p$ = trykk og $\\rho$ = tetthet`,answer:{kind:`text`,expectedKeywords:[`dimensjonsløs`,`[-]`,`uten enhet`]},solution:{short:`$\\lambda$ er dimensjonsløs $[-]$.`,full:`Bruker samme fremgangsmåte som i a) og får da at $\\lambda = [-]$ altså dimensjonsløs`}},{id:`2c`,prompt:`Formelen under angir volumstrømmen i en trang spalte. Sett inn enhetene til hver av variablene gjennomfør en dimensjonsanalyse:
 $$\\dot{V} = \\dfrac{b \\cdot \\delta^3}{12\\eta L}(p_1 - p_2)$$
